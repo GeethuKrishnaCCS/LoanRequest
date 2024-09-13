@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "edit-loan-master-hr-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/editLoanMasterHr/EditLoanMasterHrWebPart.js",
+          "manifest": "./src/webparts/editLoanMasterHr/EditLoanMasterHrWebPart.manifest.json"
+        }
+      ]
+    },
+    "employee-request-page-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/employeeRequestPage/EmployeeRequestPageWebPart.js",
+          "manifest": "./src/webparts/employeeRequestPage/EmployeeRequestPageWebPart.manifest.json"
+        }
+      ]
+    },
+    "approver-screen-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/approverScreen/ApproverScreenWebPart.js",
+          "manifest": "./src/webparts/approverScreen/ApproverScreenWebPart.manifest.json"
+        }
+      ]
+    },
+    "submitted-loan-request-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/submittedLoanRequest/SubmittedLoanRequestWebPart.js",
+          "manifest": "./src/webparts/submittedLoanRequest/SubmittedLoanRequestWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "EditLoanMasterHrWebPartStrings": "lib/webparts/editLoanMasterHr/loc/{locale}.js",
+    "EmployeeRequestPageWebPartStrings": "lib/webparts/employeeRequestPage/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "ApproverScreenWebPartStrings": "lib/webparts/approverScreen/loc/{locale}.js",
+    "SubmittedLoanRequestWebPartStrings": "lib/webparts/submittedLoanRequest/loc/{locale}.js"
+  }
+}

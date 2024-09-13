@@ -1,0 +1,118 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.employeeRequestPage {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.borderBox {
+  // border: 1px solid black;
+  padding: 20px;
+  box-shadow: 0 2.6px 5.6px 0 #8a8a8a, 0 0.3px 0.9px 0 #8a8a8a;
+}
+
+.EmpRequestHeading {
+  background-color: "[theme:link, default:#03787c]";
+  color: #fff;
+  padding: 5px;
+  font-size: large;
+  display: flex;
+  margin-bottom: 5px;
+
+}
+
+
+
+.onediv {
+  display: flex;
+  flex-direction: column;
+  // align-items: flex-start;
+  // width: 55%;
+}
+
+.employeeDisplay {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 4px;
+
+  @media (min-width:1100px) and (max-width:1200px) {
+    gap: 32px;
+  }
+
+  @media (max-width:1099px) {
+    flex-direction: column;
+
+  }
+}
+
+.fieldWrapper {
+  display: flex;
+ 
+  @media (min-width:1100px) and (max-width:1200px) {
+    margin-bottom: 3px;
+  }
+
+  @media (max-width:1099px) {
+    margin-bottom: 3px;    
+  }
+}
+
+.fieldLabel {
+  // flex: 1;
+  width: 210px;
+}
+
+.fieldLabelMax {
+  // flex: 1;
+  width: 200px;
+}
+
+.fieldInput {
+  width: 200px;
+}
+.fieldLabelJobBand {
+  width: 150px;
+}
+.btndiv {
+  display: flex;
+  justify-content: flex-end;
+  margin: 21px;
+  gap: 10px;
+  margin-right: 5px;
+}
+
+.validationMessage {
+  color: red;
+  margin-top: 5px;
+}
+// .fieldMessageBar{
+
+// }

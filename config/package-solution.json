@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "loan-request-client-side-solution",
+    "id": "21509f81-c9f3-439c-a31a-1a13b1ed9b8e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "loanRequest description"
+      },
+      "longDescription": {
+        "default": "loanRequest description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "loan-request Feature",
+        "description": "The feature that activates elements of the loan-request solution.",
+        "id": "350b340a-cc03-4cc1-97f1-ff039602081f",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/loan-request.sppkg"
+  }
+}
